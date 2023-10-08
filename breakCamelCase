@@ -1,0 +1,17 @@
+function breakCamel(string){
+    let res = ""
+    
+    for(i=0;i<string.length;i++){
+        const char = string[i]
+        
+        if(char === char.toUpperCase()){
+            res += " "
+        }
+        res += char
+    }
+    
+    return res
+}
+
+let ans = breakCamel("camAsa")
+console.log(ans)
